@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOS Links Subsection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bios-wrapper">
+        <header class="bios-header">
+            <span>Setup Utility</span>
+            <span>Section: Links</span>
+        </header>
+
+        <main class="bios-main">
+            <section class="left-panel">
+                <div class="section-title">External Boot Links</div>
+                <div class="info-row">
+                    <span class="label">Collection:</span>
+                    <span class="value">Primary online profiles and contact hub</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Last update:</span>
+                    <span class="value">2026-07-11</span>
+                </div>
+
+                <div class="content-list"></div>
+                <div class="divider"></div>
+                <nav class="bios-nav" aria-label="External links"></nav>
+            </section>
+
+            <aside class="right-panel">
+                <div class="help-box">
+                    <div class="help-title">Section Help</div>
+                    <p id="help-text">Use the keyboard Up/Down arrows or hover with your mouse to select a link. Press Enter or click to open.</p>
+                </div>
+            </aside>
+        </main>
+
+        <footer class="bios-footer">
+            <span>F1: Help</span>
+            <span>↑↓: Select Item</span>
+            <span>Enter: Open Link</span>
+            <span>F10: Save & Exit</span>
+        </footer>
+    </div>
+
+    <script src="site-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

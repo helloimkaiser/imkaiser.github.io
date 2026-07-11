@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Backend</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-mode">
+    <div class="admin-container">
+        <header class="admin-header">
+            <div>
+                <h1>Admin Backend</h1>
+                <p class="admin-subtitle">Simple content editing and export for your site data.</p>
+            </div>
+        </header>
+
+        <main class="admin-main">
+            <section class="admin-panel" id="admin-root">
+                <div class="admin-login" id="admin-login">
+                    <div class="content-item-title">Sign in to edit site data</div>
+                    <div class="admin-field">
+                        <label for="admin-username">Username</label>
+                        <input id="admin-username" type="text" autocomplete="username">
+                    </div>
+                    <div class="admin-field">
+                        <label for="admin-password">Password</label>
+                        <input id="admin-password" type="password" autocomplete="current-password">
+                    </div>
+                    <div class="admin-controls">
+                        <button id="admin-login-button" class="admin-button">Sign In</button>
+                    </div>
+                    <div class="admin-message" id="admin-message"></div>
+                </div>
+            </section>
+
+            <aside class="admin-help" id="admin-help">
+                <div class="help-box admin-help-box">
+                    <div class="help-title">Need help?</div>
+                    <p id="admin-help-text">Use the login form to unlock the editor. Save applies live updates and exports current JSON.</p>
+                </div>
+            </aside>
+        </main>
+
+        <footer class="admin-footer">
+            <span>Admin access</span>
+            <span>Manage page content easily</span>
+            <span>Save and export JSON</span>
+        </footer>
+    </div>
+
+    <script src="site-data.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

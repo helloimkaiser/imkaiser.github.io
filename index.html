@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOS Setup Utility</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bios-wrapper">
+        <header class="bios-header">
+            <span>Setup Utility</span>
+            <span>Version 1.06</span>
+        </header>
+
+        <main class="bios-main">
+            <section class="left-panel">
+                <div class="section-title">System Configuration [kaiser]</div>
+                <div class="info-row">
+                    <span class="label">User Profile:</span>
+                    <span class="value">@helloimkaiser</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">Focus Areas:</span>
+                    <span class="value">Editor, Designer, Keyboard hobbyist</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">System Status:</span>
+                    <span class="value status-online">ONLINE</span>
+                </div>
+
+                <div class="divider"></div>
+                <div class="section-title">Subsection Navigation</div>
+                <div class="content-list"></div>
+            </section>
+
+            <aside class="right-panel">
+                <div class="help-box">
+                    <div class="help-title">Main Menu Help</div>
+                    <p id="help-text">Use the keyboard Up/Down arrows or hover with your mouse to select a section. Press Enter to open it.</p>
+                </div>
+            </aside>
+        </main>
+
+        <footer class="bios-footer">
+            <span>F1: Help</span>
+            <span>↑↓: Select Item</span>
+            <span>Enter: Boot Link</span>
+            <span>F10: Save & Exit</span>
+        </footer>
+    </div>
+
+    <script src="site-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

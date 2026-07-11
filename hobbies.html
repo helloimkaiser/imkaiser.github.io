@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOS Hobbies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bios-wrapper">
+        <header class="bios-header">
+            <span>Setup Utility</span>
+            <span>Section: Hobbies</span>
+        </header>
+
+        <main class="bios-main">
+            <section class="left-panel">
+                <div class="section-title">Hobbies Subsections</div>
+                <div class="content-list">
+                    <button type="button" class="bios-button" data-url="hobbies-keyboards-reviews.html" data-help="Open the Keyboards & Reviews subsection.">
+                        <div class="content-item-title">Keyboards & Reviews</div>
+                        <div class="content-item-body">Hardware reviews, new builds, and keyboard-related exploration with the same BIOS-style clarity.</div>
+                    </button>
+                    <button type="button" class="bios-button" data-url="hobbies-switches.html" data-help="Open the Keyboard Switches subsection.">
+                        <div class="content-item-title">Keyboard Switches</div>
+                        <div class="content-item-body">Switch testing, tactile profiles, and comparisons for the mechanical keyboard community.</div>
+                    </button>
+                    <button type="button" class="bios-button" data-url="hobbies-personal.html" data-help="Open the Personal subsection.">
+                        <div class="content-item-title">Personal</div>
+                        <div class="content-item-body">Personal notes, daily workflows, and creative habits behind the work.</div>
+                    </button>
+                    <button type="button" class="bios-button" data-url="hobbies-misc.html" data-help="Open the Miscellaneous subsection.">
+                        <div class="content-item-title">Miscellaneous</div>
+                        <div class="content-item-body">Side projects, tools, and interesting experiments that don't fit into the main categories.</div>
+                    </button>
+                </div>
+
+                <div class="divider"></div>
+                <nav class="bios-nav" aria-label="Hobbies navigation">
+                    <a href="index.html" class="bios-link active" data-help="Return to the main menu.">
+                        <span class="arrow">↩️</span> Back to Main Menu
+                    </a>
+                </nav>
+            </section>
+
+            <aside class="right-panel">
+                <div class="help-box">
+                    <div class="help-title">Section Help</div>
+                    <p id="help-text">Select a hobbies subsection to view its content. Use Enter or click to open a page.</p>
+                </div>
+            </aside>
+        </main>
+
+        <footer class="bios-footer">
+            <span>F1: Help</span>
+            <span>↑↓: Select Item</span>
+            <span>Enter: Navigate</span>
+            <span>F10: Save & Exit</span>
+        </footer>
+    </div>
+
+    <script src="site-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

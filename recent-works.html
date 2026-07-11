@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIOS Recent Works</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bios-wrapper">
+        <header class="bios-header">
+            <span>Setup Utility</span>
+            <span>Section: Recent Works</span>
+        </header>
+
+        <main class="bios-main">
+            <section class="left-panel">
+                <div class="section-title">Recent Works</div>
+                <div class="content-list">
+                    <button type="button" class="bios-button" data-url="recent-works-realtime.html" data-help="Review the realtime editing demo summary.">
+                        <div class="content-item-title">Realtime Editing Demo</div>
+                        <div class="content-item-body">A workflow showcase combining motion graphics, title animation and live edit sequencing.</div>
+                    </button>
+                    <button type="button" class="bios-button" data-url="recent-works-vfx.html" data-help="Review the short film visual FX reel summary.">
+                        <div class="content-item-title">Short Film Visual FX Reel</div>
+                        <div class="content-item-body">A curated reel of recent visual effects, compositing, and scene enhancement work.</div>
+                    </button>
+                    <button type="button" class="bios-button" data-url="recent-works-ui.html" data-help="Review the type and interface exploration summary.">
+                        <div class="content-item-title">Type & Interface Exploration</div>
+                        <div class="content-item-body">A hardware-inspired interface exploration with pixel typography and BIOS-style layout design.</div>
+                    </button>
+                </div>
+
+                <div class="divider"></div>
+                <nav class="bios-nav" aria-label="Section navigation">
+                    <a href="index.html" class="bios-link active" data-help="Return to the main menu and choose a different subsection.">
+                        <span class="arrow">↩️</span> Back to Main Menu
+                    </a>
+                </nav>
+            </section>
+
+            <aside class="right-panel">
+                <div class="help-box">
+                    <div class="help-title">Section Help</div>
+                    <p id="help-text">Select a work item to view its media, process, and tools used. Use Enter or click to open a detail page.</p>
+                </div>
+            </aside>
+        </main>
+
+        <footer class="bios-footer">
+            <span>F1: Help</span>
+            <span>↑↓: Select Item</span>
+            <span>Enter: Navigate</span>
+            <span>F10: Save & Exit</span>
+        </footer>
+    </div>
+
+    <script src="site-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

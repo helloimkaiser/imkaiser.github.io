@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type & Interface Exploration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bios-wrapper">
+        <header class="bios-header">
+            <span>Setup Utility</span>
+            <span>Section: Recent Works</span>
+        </header>
+
+        <main class="bios-main">
+            <section class="left-panel">
+                <div class="section-title">Type & Interface Exploration</div>
+                <div class="content-list">
+                    <div class="content-item">
+                        <div class="content-item-title">Media</div>
+                        <div class="content-item-body">Gallery preview: <a href="#" class="external-link">Open visuals</a></div>
+                    </div>
+                    <div class="content-item">
+                        <div class="content-item-title">Process</div>
+                        <div class="content-item-body">Designed pixel-inspired layouts, tested typography scales, and iterated the visual rhythm to maintain a strong system-like structure.</div>
+                    </div>
+                    <div class="content-item">
+                        <div class="content-item-title">Tools Used</div>
+                        <div class="content-item-body">Used Figma for layout experimentation, CSS simulations for BIOS textures, and quick render previews.</div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+                <nav class="bios-nav" aria-label="Recent works navigation">
+                    <a href="recent-works.html" class="bios-link active" data-help="Return to the Recent Works menu.">
+                        <span class="arrow">↩️</span> Back to Recent Works
+                    </a>
+                    <a href="index.html" class="bios-link" data-help="Return to the main menu.">
+                        <span class="arrow">↩️</span> Back to Main Menu
+                    </a>
+                </nav>
+            </section>
+
+            <aside class="right-panel">
+                <div class="help-box">
+                    <div class="help-title">Detail Help</div>
+                    <p id="help-text">View the media, process, and tools for this interface exploration.</p>
+                </div>
+            </aside>
+        </main>
+
+        <footer class="bios-footer">
+            <span>F1: Help</span>
+            <span>↑↓: Select Item</span>
+            <span>Enter: Navigate</span>
+            <span>F10: Save & Exit</span>
+        </footer>
+    </div>
+
+    <script src="site-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
