@@ -21,6 +21,7 @@ body {
     justify-content: center;
     align-items: center;
     overflow-y: auto;
+    position: relative;
 }
 
 body.admin-mode {
@@ -29,6 +30,32 @@ body.admin-mode {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+}
+
+.dev-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    background: #ffff55;
+    color: #0000aa;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1rem;
+    padding: 6px 0;
+    box-shadow: 0 2px 0 #ffffff;
+}
+
+.dev-banner span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: devScroll 10s linear infinite;
+}
+
+@keyframes devScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
 }
 
 .bios-wrapper {
